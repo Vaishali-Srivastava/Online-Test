@@ -1,0 +1,61 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+p, h1, h2, h3, h4, h5, h6, ul, ol{
+    margin: 0;
+}
+
+button:focus,
+a:focus,
+input:focus{
+    outline: none;
+}
+
+.main-panel{
+    background: url(/images/light-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box{
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.36);
+    border-radius: 10px;
+}
+
+.form-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.form-wrapper div{
+    flex: 1;
+}
+
+.form-box .input-field{
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding-left: 0;
+}
+.form-box .input-field:focus{
+    box-shadow: none;
+    border-color:#0210b7;
+}
+.form-box .label-field{
+    font-weight: 600;
+}

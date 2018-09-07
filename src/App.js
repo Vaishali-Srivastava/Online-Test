@@ -4,15 +4,15 @@ import './App.css';
 import Form from './form';
 import './style.css';
 import Login from './login';
-
-
+import SignUp from './sign-up';
+import BasicExample from '././router/basic';
+import UserInfo from './user-info';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Login />
-        
+        <BasicExample />
       </div>
     );
   }

@@ -1,0 +1,53 @@
+.main-wrapper{
+    padding: 50px 0;
+}
+.title-head{
+    text-align: left;
+    padding: 0rem 0.9rem;
+}
+.list-panel .list-group-item {
+    padding: .5rem 0.9rem;
+    text-align: left;
+}
+.list-panel .list-group-item:hover,
+.list-panel .list-group-item:focus{
+    background: #1a0684;
+}
+.list-panel .list-group-item a{
+    color: #6d6d6d;
+    padding: 0;
+}
+.list-panel .list-group-item:hover a,
+.list-panel .list-group-item:focus a{
+    color: #ffffff;
+}
+
+.right-wrapper{
+    padding: 30px 0;
+    text-align: left;
+}
+.main-title{
+    text-align: center;
+}
+.btn-wrapper{
+    margin: 40px 0;
+}
+.btn-wrapper .prev-btn{
+    float: left;
+}
+.btn-wrapper .next-btn{
+    float: right;
+}
+.btn-wrapper .btn{
+    border-radius: 4px;
+    background: #1a0684;
+    color: #fff;
+    padding: .5rem 2rem;
+    transition: all 2s ease;
+}
+.btn-wrapper .btn:hover,
+.btn-wrapper .btn:focus{
+    background: #6455b3;
+}
+
+    

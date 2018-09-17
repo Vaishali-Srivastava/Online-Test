@@ -58,40 +58,40 @@ export default class Main extends React.Component {
                                     <h4 class="title-head">HTML and CSS</h4>
                                     <ListGroup className="list-panel">
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/index">ReactJS - Home</NavLink>
+                                            <NavLink exact href="/reactjs/index">ReactJS - Home</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_overview">ReactJS - Overview</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_overview">ReactJS - Overview</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_environment_setup">ReactJS - Environment Setup</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_environment_setup">ReactJS - Environment Setup</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_jsx">ReactJS - JSX</NavLink>
+                                            <NavLink  exact href="/reactjs/reactjs_jsx">ReactJS - JSX</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_components">ReactJS - Components</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_components">ReactJS - Components</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_state">ReactJS - State</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_state">ReactJS - State</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_props_overview">ReactJS - Props Overview</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_props_overview">ReactJS - Props Overview</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_props_validation">ReactJS - Props Validation</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_props_validation">ReactJS - Props Validation</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_component_api">ReactJS - Component API</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_component_api">ReactJS - Component API</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_component_life_cycle">ReactJS - Component Life Cycle</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_component_life_cycle">ReactJS - Component Life Cycle</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_forms">ReactJS - Forms</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_forms">ReactJS - Forms</NavLink>
                                         </ListGroupItem>
                                         <ListGroupItem>
-                                            <NavLink href="reactjs/reactjs_events">ReactJS - Events</NavLink>
+                                            <NavLink exact href="/reactjs/reactjs_events">ReactJS - Events</NavLink>
                                         </ListGroupItem>
                                         
                                     </ListGroup>

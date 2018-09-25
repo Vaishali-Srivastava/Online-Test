@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router,Route, Link, Switch} from 'react-router-dom';
 import {   Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu,
     DropdownItem , Row, Col, ListGroup, ListGroupItem} from 'reactstrap';
 
@@ -56,45 +57,65 @@ export default class Main extends React.Component {
                             <Col xs="4" sm="4">
                                 <aside className="sidebar-wrap">
                                     <h4 class="title-head">HTML and CSS</h4>
-                                    <ListGroup className="list-panel">
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/index">ReactJS - Home</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_overview">ReactJS - Overview</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_environment_setup">ReactJS - Environment Setup</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink  exact href="/reactjs/reactjs_jsx">ReactJS - JSX</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_components">ReactJS - Components</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_state">ReactJS - State</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_props_overview">ReactJS - Props Overview</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_props_validation">ReactJS - Props Validation</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_component_api">ReactJS - Component API</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_component_life_cycle">ReactJS - Component Life Cycle</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_forms">ReactJS - Forms</NavLink>
-                                        </ListGroupItem>
-                                        <ListGroupItem>
-                                            <NavLink exact href="/reactjs/reactjs_events">ReactJS - Events</NavLink>
-                                        </ListGroupItem>
-                                        
-                                    </ListGroup>
+                                    
+                                    <Router>
+                                        <div>
+                                        <ListGroup className="list-panel">
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/index">ReactJS - Home</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_overview">ReactJS - Overview</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_environment_setup">ReactJS - Environment Setup</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink  exact href="/reactjs/reactjs_jsx">ReactJS - JSX</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_components">ReactJS - Components</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_state">ReactJS - State</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_props_overview">ReactJS - Props Overview</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_props_validation">ReactJS - Props Validation</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_component_api">ReactJS - Component API</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_component_life_cycle">ReactJS - Component Life Cycle</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_forms">ReactJS - Forms</NavLink>
+                                            </ListGroupItem>
+                                            <ListGroupItem>
+                                                <NavLink exact href="/reactjs/reactjs_events">ReactJS - Events</NavLink>
+                                            </ListGroupItem>
+                                            
+                                        </ListGroup>
+                                        <Switch>
+                                            <Route path="/reactjs/index" component={Home} />
+                                            <Route path="/reactjs/reactjs_overview" component={ReactOverview} />
+                                            <Route path="/reactjs/reactjs_environment_setup" component={ReactEnvironmentSetup} />
+                                            <Route path="/reactjs/reactjs_jsx" component={ReactJsx} />
+                                            <Route path="/reactjs/reactjs_components" component={ReactComponents} />
+                                            <Route path="/reactjs/reactjs_state" component={ReactState} />
+                                            <Route path="/reactjs/reactjs_props_overview" component={ReactPropsOverview} />
+                                            <Route path="/reactjs/reactjs_props_validation" component={ReactPropsValidation} />
+                                            <Route path="/reactjs/reactjs_component_api" component={ReactComponentApi} />
+                                            <Route path="/reactjs/reactjs_component_life_cycle" component={ReactComponentLifeCycle} />
+                                            <Route path="/reactjs/reactjs_forms" component={ReactForms} />
+                                            <Route path="/reactjs/reactjs_events" component={ReactEvents} />
+                                        </Switch>
+                                        </div>
+                                    </Router>
+                                    
                                 </aside>
                             </Col>
                             <Col xs="8" sm="8">
@@ -113,8 +134,21 @@ export default class Main extends React.Component {
                         </Row>
                     </div>
                 </section>
+                
             </div>
         );
     }
 }
 
+const Home = () => <h2>Home</h2>;
+const ReactOverview = () => <h2>Overview</h2>;
+const ReactEnvironmentSetup = () => <h2>Environment Setup</h2>;
+const ReactJsx = () => <h2>React JSX</h2>;
+const ReactComponents = () => <h2>React Component</h2>;
+const ReactState = () => <h2>React state</h2>;
+const ReactPropsOverview = () => <h2>React Props Overview</h2>;
+const ReactPropsValidation = () => <h2>React Props Validation</h2>;
+const ReactComponentApi = () => <h2>React Component API</h2>;
+const ReactComponentLifeCycle = () => <h2>React Component Life Cycle</h2>;
+const ReactForms = () => <h2>React Forms</h2>;
+const ReactEvents = () => <h2>React Events</h2>;

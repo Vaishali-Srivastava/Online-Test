@@ -2,6 +2,18 @@ import React from 'react';
 import {BrowserRouter as Router,Route, Link, Switch} from 'react-router-dom';
 import {   Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu,
     DropdownItem , Row, Col, ListGroup, ListGroupItem} from 'reactstrap';
+import Index from './reactjs/index';
+import ReactjsOverview from './reactjs/reactjs_overview';
+import ReactjsEnvironmentSetup from './reactjs/reactjs_environment_setup';
+import ReactjsComponents from './reactjs/reactjs_components';
+import ReactjsJsx from './reactjs/reactjs_jsx';
+import ReactjsState from './reactjs/reactjs_state';
+import ReactjsPropsOverview from './reactjs/reactjs_props_overview';
+import ReactjsPropsValidation from './reactjs/reactjs_props_validation';
+import ReactjsComponentApi from './reactjs/reactjs_component_api';
+import ReactjsComponentLifeCycle from './reactjs/reactjs_component_life_cycle';
+import ReactjsForms from './reactjs/reactjs_forms';
+import ReactjsEvents from './reactjs/reactjs_events';
 
 
 export default class Main extends React.Component {
@@ -18,6 +30,7 @@ export default class Main extends React.Component {
             isOpen: !this.state.isOpen
           });
         }
+        
     render(){
         return(
             <div>
@@ -64,7 +77,7 @@ export default class Main extends React.Component {
                                                         <NavLink exact href="/reactjs/index">ReactJS - Home</NavLink>
                                                     </ListGroupItem>
                                                     <ListGroupItem>
-                                                        <NavLink exact href="/reactjs/reactjs_overview">ReactJS - Overview</NavLink>
+                                                        <NavLink exact href="/reactjs/overview">Overview</NavLink>
                                                     </ListGroupItem>
                                                     <ListGroupItem>
                                                         <NavLink exact href="/reactjs/reactjs_environment_setup">ReactJS - Environment Setup</NavLink>
@@ -105,18 +118,18 @@ export default class Main extends React.Component {
                                     <Col sm="8">
                                         <div className="right-wrapper">
                                             <Switch>
-                                                <Route path="/reactjs/index" component={Home} />
-                                                <Route path="/reactjs/reactjs_overview" component={ReactOverview} />
-                                                <Route path="/reactjs/reactjs_environment_setup" component={ReactEnvironmentSetup} />
-                                                <Route path="/reactjs/reactjs_jsx" component={ReactJsx} />
-                                                <Route path="/reactjs/reactjs_components" component={ReactComponents} />
-                                                <Route path="/reactjs/reactjs_state" component={ReactState} />
-                                                <Route path="/reactjs/reactjs_props_overview" component={ReactPropsOverview} />
-                                                <Route path="/reactjs/reactjs_props_validation" component={ReactPropsValidation} />
-                                                <Route path="/reactjs/reactjs_component_api" component={ReactComponentApi} />
-                                                <Route path="/reactjs/reactjs_component_life_cycle" component={ReactComponentLifeCycle} />
-                                                <Route path="/reactjs/reactjs_forms" component={ReactForms} />
-                                                <Route path="/reactjs/reactjs_events" component={ReactEvents} />
+                                                <Route path="/reactjs/index" component={Index} />
+                                                <Route path="/reactjs/overview" component={ReactjsOverview} />
+                                                <Route path="/reactjs/reactjs_environment_setup" component={ReactjsEnvironmentSetup} />
+                                                <Route path="/reactjs/reactjs_jsx" component={ReactjsJsx} />
+                                                <Route path="/reactjs/reactjs_components" component={ReactjsComponents} />
+                                                <Route path="/reactjs/reactjs_state" component={ReactjsState} />
+                                                <Route path="/reactjs/reactjs_props_overview" component={ReactjsPropsOverview} />
+                                                <Route path="/reactjs/reactjs_props_validation" component={ReactjsPropsValidation} />
+                                                <Route path="/reactjs/reactjs_component_api" component={ReactjsComponentApi} />
+                                                <Route path="/reactjs/reactjs_component_life_cycle" component={ReactjsComponentLifeCycle} />
+                                                <Route path="/reactjs/reactjs_forms" component={ReactjsForms} />
+                                                <Route path="/reactjs/reactjs_events" component={ReactjsEvents} />
                                             </Switch>
                                             <p>React is a front-end library developed by Facebook. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components. It is currently one of the most popular JavaScript libraries and has a strong foundation and large community behind it.</p>
                                             <h4 className="main-title">Audience</h4>
@@ -127,28 +140,16 @@ export default class Main extends React.Component {
                                                 <NavLink href="javascript:void(0)" className="prev-btn btn">Previous</NavLink>
                                                 <NavLink href="javascript:void(0)" className="next-btn btn">Next</NavLink>
                                             </div>
-                                            
                                         </div>
                                     </Col>
                                 </Row>
                             </Router>
                     </div>
                 </section>
-                
             </div>
         );
     }
 }
 
-const Home = () => <h2>Home</h2>;
-const ReactOverview = () => <h2>Overview</h2>;
-const ReactEnvironmentSetup = () => <h2>Environment Setup</h2>;
-const ReactJsx = () => <h2>React JSX</h2>;
-const ReactComponents = () => <h2>React Component</h2>;
-const ReactState = () => <h2>React state</h2>;
-const ReactPropsOverview = () => <h2>React Props Overview</h2>;
-const ReactPropsValidation = () => <h2>React Props Validation</h2>;
-const ReactComponentApi = () => <h2>React Component API</h2>;
-const ReactComponentLifeCycle = () => <h2>React Component Life Cycle</h2>;
-const ReactForms = () => <h2>React Forms</h2>;
-const ReactEvents = () => <h2>React Events</h2>;
+
+
